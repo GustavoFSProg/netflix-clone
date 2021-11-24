@@ -3,10 +3,12 @@ import './App.css'
 import MovieRow from './components/MovieRow'
 import { getHomeList, getMovieInfo } from './tmdb'
 import FeatureMovie from './components/FeatureMovie'
+import Header from './components/Header'
 
 function App() {
   const [movieList, setMovielist] = useState([])
   const [featureData, setFeatureData] = useState([])
+  const [blackHeader, setBlackHeader] = useState(false)
 
   useEffect(() => {
     async function loadAll() {
@@ -27,8 +29,25 @@ function App() {
     loadAll()
   }, [])
 
+  useEffect(() => {
+    function ScrollListener() {
+      if (window.scrollY > 10) {
+        setBlackHeader(true)
+      } else {
+        setBlackHeader(false)
+      }
+    }
+
+    window.addEventListener('scroll', ScrollListener)
+
+    return () => {
+      window.addEventListener('scroll', ScrollListener)
+    }
+  }, [])
+
   return (
     <div className="App">
+      <Header black={blackHeader} />
       {featureData && <FeatureMovie item={featureData} />}
       <section className="lists">
         {movieList.map((item, key) => (

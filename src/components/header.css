@@ -1,0 +1,36 @@
+header {
+  height: 70px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease 0.5s;
+}
+
+.header-logo {
+  height: 30px;
+}
+
+.header-logo img {
+  /* height: 100%; */
+  width: 150px;
+}
+
+.header-user {
+  height: 35px;
+}
+
+.header-user img {
+  /* height: 100%; */
+  width: 45px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+header.black {
+  background: #141414;
+}
