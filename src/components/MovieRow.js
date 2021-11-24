@@ -1,21 +1,26 @@
 import React from 'react'
+import './movieRow.css'
 
 function MovieRow({ title, items }) {
   return (
-    <div>
+    <div className="movieRow">
       {' '}
       <h2>{title}</h2>
-      <div>
-        {items.results.length > 0 &&
-          items.results.map((item, key) => {
-            return (
-              <img
-                key={key}
-                src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
-                alt="movieslist"
-              />
-            )
-          })}
+      <div className="movieRow--listarea">
+        <div className="movieRow--list">
+          {items.results.length > 0 &&
+            items.results.map((item, key) => {
+              return (
+                <div key={key} className="movieRow--item">
+                  <img
+                    key={key}
+                    src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
+                    alt={item.original_title}
+                  />
+                </div>
+              )
+            })}
+        </div>
       </div>
     </div>
   )
