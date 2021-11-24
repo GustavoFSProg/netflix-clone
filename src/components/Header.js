@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
-import Netflix from '../assets/netflix.png'
-import avatar from '../assets/avatar.png'
+import Netflix from '../assets/netflix-trans.png'
+import avatar from '../assets/avatar-oficial.png'
 
 function Header({ black }) {
   return (

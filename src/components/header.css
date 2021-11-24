@@ -13,12 +13,13 @@ header {
 
 .header-logo {
   height: 30px;
-  margin-top: -40px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 .header-logo img {
   /* height: 100%; */
-  width: 150px;
+  width: 110px;
 }
 
 .header-user {

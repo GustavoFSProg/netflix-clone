@@ -33,7 +33,7 @@ function FeatureMovie({ item }) {
             <div className="featured-descriptions">{item.overview} </div>
             <div className="featured-buttons">
               <a href={`/watch/${item.id}`} className="featured-watch-button">
-                - Assistir
+                ▶ Assistir
               </a>
               <a href={`/list/add/${item.id}`} className="featured-mylist-button">
                 + Minha Lista

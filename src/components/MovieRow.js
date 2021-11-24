@@ -52,9 +52,8 @@ function MovieRow({ title, items }) {
               return (
                 <div key={key} className="movieRow--item">
                   <img
-                    key={key}
                     src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
-                    alt={item.original_title}
+                    alt={item.original_name}
                   />
                 </div>
               )
