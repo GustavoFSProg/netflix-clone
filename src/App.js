@@ -66,6 +66,14 @@ function App() {
         <br />
         Dados pegos do site Themoviedb.org
       </footer>
+      {movieList <= 0 && (
+        <div className="loading">
+          <img
+            src="https://tenor.com/view/loading-buffering-spinning-waiting-gif-17313179"
+            alt="Carregando"
+          />
+        </div>
+      )}
     </div>
   )
 }
