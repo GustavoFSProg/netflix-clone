@@ -4,6 +4,7 @@ import MovieRow from './components/MovieRow'
 import { getHomeList, getMovieInfo } from './tmdb'
 import FeatureMovie from './components/FeatureMovie'
 import Header from './components/Header'
+import Loading from './assets/loading.gif'
 
 function App() {
   const [movieList, setMovielist] = useState([])
@@ -68,10 +69,7 @@ function App() {
       </footer>
       {movieList <= 0 && (
         <div className="loading">
-          <img
-            src="https://tenor.com/view/loading-buffering-spinning-waiting-gif-17313179"
-            alt="Carregando"
-          />
+          <img src={Loading} alt="Carregando" />
         </div>
       )}
     </div>

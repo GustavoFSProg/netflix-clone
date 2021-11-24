@@ -3,7 +3,7 @@ import React from 'react'
 import './fetureMovie.css'
 
 function FeatureMovie({ item }) {
-  console.log(item)
+  // console.log(item)
 
   let firstDate = new Date(item.first_air_date)
   let genres = []
@@ -11,6 +11,12 @@ function FeatureMovie({ item }) {
   for (let i in item.genres) {
     genres.push(item.genres[i].name)
   }
+  console.log(item.overview)
+
+  // let description = item.overview | ' '
+  // if (description.length > 200) {
+  //   description = description.substring(0, 200) + '...'
+  // }
 
   return (
     <section
