@@ -13,6 +13,7 @@ header {
 
 .header-logo {
   height: 30px;
+  margin-top: -40px;
 }
 
 .header-logo img {
@@ -25,9 +26,8 @@ header {
 }
 
 .header-user img {
-  /* height: 100%; */
-  width: 45px;
-  margin-right: 25px;
+  width: 38px;
+  margin-right: 32px;
   border-radius: 5px;
 }
 
