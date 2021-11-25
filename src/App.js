@@ -57,11 +57,9 @@ function App() {
       </section>
 
       <footer>
-        Feito com{' '}
-        <span role="img" aria-label="coração">
-          💓
-        </span>
-        pela B7Web
+        Feito 
+        
+        por Gustavo Sohne
         <br />
         Direitos de imagems pela Netflix
         <br />
