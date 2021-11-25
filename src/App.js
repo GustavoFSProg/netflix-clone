@@ -69,7 +69,7 @@ function App() {
       </footer>
       {movieList <= 0 && (
         <div className="loading">
-          <img src={Loading} alt="Carregando" />
+          <img src={Loading} alt="Carregando" width="170" />
         </div>
       )}
     </div>
