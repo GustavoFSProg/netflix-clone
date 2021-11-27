@@ -5,6 +5,7 @@ import { getHomeList, getMovieInfo } from './tmdb'
 import FeatureMovie from './components/FeatureMovie'
 import Header from './components/Header'
 import Loading from './assets/loading.gif'
+import Thmdb from './assets/themviedb.svg'
 
 function App() {
   const [movieList, setMovielist] = useState([])
@@ -57,13 +58,12 @@ function App() {
       </section>
 
       <footer>
-        Feito 
-        
-        por Gustavo Sohne
+        Feito por Gustavo Sohne
         <br />
         Direitos de imagems pela Netflix
         <br />
         Dados pegos do site Themoviedb.org
+        <img src={Thmdb} alt="logothmvdb" width="80" style={{ marginLeft: '13px' }} />
       </footer>
       {movieList <= 0 && (
         <div className="loading">
